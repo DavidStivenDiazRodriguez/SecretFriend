@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Secret Friend</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Asignacion</string>
+    <string name="title_notifications">Informacion</string>
+    <string name="name_user">Nombre</string>
+    <string name="last_name_user">Apellido</string>
+    <string name="sign_up">Registrar</string>
+    <string name="alias_user">Alias</string>
+    <string name="name_gift">Opcion de regalo</string>
+    <string name="price_gift">Precio</string>
+</resources>

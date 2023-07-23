@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <!-- Campo de entrada para el nombre de usuario -->
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_user"
+            android:inputType="text" />
+
+        <!-- Campo de entrada para el apellido de usuario -->
+        <EditText
+            android:id="@+id/editTextUserLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name_user"
+            android:inputType="text" />
+
+        <!-- Campo de entrada para el alias de usuario -->
+        <EditText
+            android:id="@+id/editTextUserAlias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/alias_user"
+            android:inputType="text" />
+
+        <!-- Campo de entrada para las opciones de regalo -->
+        <EditText
+            android:id="@+id/editTextGiftName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_gift"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextGiftPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/price_gift"
+            android:inputType="number" />
+
+        <!-- Botón de registro -->
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
