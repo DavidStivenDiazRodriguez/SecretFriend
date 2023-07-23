@@ -1,11 +1,11 @@
-package com.example.secretfriend.ui.register
+package com.example.secretfriend
 
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.secretfriend.Repository.RegisterRepository
 
-class RegisterViewModelFactory(private val registerRepository: RegisterRepository) : ViewModelProvider.Factory {
+class ViewModelFactory(private val registerRepository: RegisterRepository) : ViewModelProvider.Factory {
 
     constructor(context: Context): this(RegisterRepository(context))
 
