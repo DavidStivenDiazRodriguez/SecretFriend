@@ -4,6 +4,7 @@ import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
+import retrofit2.http.Path
 
 interface ApiService {
 
@@ -12,5 +13,8 @@ interface ApiService {
 
     @GET("user")
     suspend fun getAllUser(): Response<List<UserResponse>>
+
+    @GET("user/{id}")
+    suspend fun getUserByUserName(@Path("id") username: String): Response<UserResponse>
 
 }

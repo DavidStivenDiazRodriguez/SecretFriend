@@ -3,19 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.notifications.NotificationsFragment">
+    android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textViewTitleFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:hint="CREA TU USUARIO !!"
+            android:textColorHint="@color/purple_500" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_group_add_24"
+            android:layout_marginBottom="25dp" />
 
         <!-- Campo de entrada para el nombre de usuario -->
         <EditText
@@ -56,13 +72,38 @@
             android:hint="@string/price_gift"
             android:inputType="number" />
 
+        <EditText
+            android:id="@+id/editTextGiftNameTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:hint="@string/name_gift_two"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextGiftPriceTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:hint="@string/price_gift_two"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonAddGift"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/add_other_gift"
+            android:layout_marginTop="25dp"/>
+
         <!-- Botón de registro -->
         <Button
             android:id="@+id/buttonRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sign_up" />
-
+            android:layout_marginTop="25dp"
+            android:text="REGISTRAR" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

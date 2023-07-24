@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textViewTitleFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:hint="TU AMIGO SECRETO QUIERE ..."
+            android:textColorHint="@color/purple_500"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- Campo de entrada para el nombre de usuario -->
+        <TextView
+            android:id="@+id/textViewAliasUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:hint="@string/alias_user"
+            android:inputType=""
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Campo de entrada para la opción de regalo 1 -->
+        <TextView
+            android:id="@+id/textViewOptionGift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:hint="@string/name_gift"
+            android:inputType="text" />
+
+        <!-- Campo de entrada para el precio de la opción de regalo 1 -->
+        <TextView
+            android:id="@+id/textViewPriceGift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:hint="@string/price_gift"
+            android:inputType="text" />
+
+        <!-- Campo de entrada para la opción de regalo 2 -->
+        <TextView
+            android:id="@+id/textViewOptionGiftTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:hint="@string/name_gift_two"
+            android:inputType="text"
+            android:visibility="gone"/>
+
+        <!-- Campo de entrada para el precio de la opción de regalo 2 -->
+        <TextView
+            android:id="@+id/textViewPriceGiftTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:hint="@string/price_gift_two"
+            android:inputType="text"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_card_giftcard_24"
+            android:layout_marginTop="25dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

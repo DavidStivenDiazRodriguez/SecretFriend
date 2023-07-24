@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_register" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.secretfriend.ui.dashboard.AssignmentFragment"
+        android:id="@+id/navigation_assignment"
+        android:name="com.example.secretfriend.ui.Assignment.AssignmentFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_assignment" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.secretfriend.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_information"
+        android:name="com.example.secretfriend.ui.Information.InformationFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_information" />
 </navigation>

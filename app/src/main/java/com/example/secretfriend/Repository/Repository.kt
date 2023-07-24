@@ -4,9 +4,9 @@ import android.content.Context
 import android.widget.Toast
 import com.example.secretfriend.Retrofit.ConfigRetrofit
 import com.example.secretfriend.Retrofit.User
-import com.google.gson.Gson
+import com.example.secretfriend.Retrofit.UserResponse
 
-class RegisterRepository(private val context: Context) {
+class Repository(private val context: Context) {
 
     private val retrofit = ConfigRetrofit.getRetrofitClient()
 
@@ -21,4 +21,10 @@ class RegisterRepository(private val context: Context) {
         val users = retrofit.getAllUser()
         return users.body()!!.map { it.username }
     }
+
+    //Obtiene la lista de regalos de un usuario por medio de su username
+    suspend fun getFriendByUserName(username: String): UserResponse {
+        return retrofit.getUserByUserName(username).body()!!
+    }
+
 }

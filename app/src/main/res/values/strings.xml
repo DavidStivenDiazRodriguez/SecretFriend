@@ -7,6 +7,9 @@
     <string name="last_name_user">Apellido</string>
     <string name="sign_up">Registrar</string>
     <string name="alias_user">Alias</string>
-    <string name="name_gift">Opcion de regalo</string>
-    <string name="price_gift">Precio</string>
+    <string name="name_gift">Opcion de regalo 1</string>
+    <string name="name_gift_two">Opcion de regalo 2</string>
+    <string name="price_gift">Precio del regalo 1</string>
+    <string name="price_gift_two">Precio del regalo 2</string>
+    <string name="add_other_gift">AGREGAR OTRO REGALO</string>
 </resources>
